@@ -1,6 +1,0 @@
-/server/pkg
-/server/bin/log
-/server/bin/*.exe
-/server/*.exe
-/server/bin/c.json
-/server/src/Server/battle/*.test

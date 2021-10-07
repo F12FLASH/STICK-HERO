@@ -1,1 +1,0 @@
-robotTest.exe -u=magicse_1 -net=ws -proto=pb
