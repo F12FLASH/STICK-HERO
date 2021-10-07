@@ -1,0 +1,19 @@
+language: node_js
+dist: trusty
+node_js:
+- '7.4'
+before_deploy:
+- echo $TRAVIS_BUILD_DIR
+- echo "$(pwd)"
+- echo "$(ls)"
+- cd $TRAVIS_BUILD_DIR && npm run build
+deploy:
+- provider: script
+  skip_cleanup: true
+  script:
+    - echo "Deploying"
+  on:
+    branch: develop
+cache:
+  directories:
+  - node_modules
